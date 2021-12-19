@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <title>BooksInfo</title>
+  </head>
+  <body>
+    <nav class="listingNav nav">
+      <span class="anchorNav">BookStore</span>
+      <a href="/books" class="btn addBook-btn">Back</a>
+    </nav>
+    <div class="body">
+      <h2 class="title-heading"><%= bookInfo.title %></h2>
+      <span class="authorName"><%= bookInfo.author %></span>
+      <p class="bookInfo"><%= bookInfo.desc %></p>
+      <span class="bookPrice">Price: $ <%= bookInfo.price %>.00</span>
+      <div class="bookInfo-buttonGroup">
+        <a href="/books/<%= bookInfo.id %>/update" class="btn edit-btn box-btn"
+          >Edit</a
+        >
+        <a
+          href="/books/<%= bookInfo.id %>/delete"
+          class="btn delete-btn box-btn"
+          >Delete</a
+        >
+      </div>
+      <!--comment-->
+      <div>
+          <form action="/books/<%= bookInfo.id %>/comment" method="post" class="comment">
+
+            <textarea name='content'></textarea>
+            <input type="submit" value="post comment" class="btn btn-postComment">
+          </form>
+      </div>
+      <div>
+        <% bookInfo.comments.forEach((comment)=>{ %>
+
+          <div class="Comment-outline">
+            <p class="comment-text"><%= comment.content %></p>
+            <div class="comment-btn-outline">
+              <a href="/comments/<%= comment.id %>/edit" class="btn edit-btn">edit</a>
+              <a href='/comments/<%= comment.id %>/delete' class="delete-btn btn">delete</a>
+            </div>
+          </div>
+
+       <% }) %>
+      </div>
+    </div>
+  </body>
+</html>

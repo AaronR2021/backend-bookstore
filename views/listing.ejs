@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>List of Books</title>
+  </head>
+  <body>
+    <nav class="listingNav nav">
+      <span class="anchorNav">BookStore</span>
+      <a href="/books/new" class="btn addBook-btn">Add Book</a>
+    </nav>
+    <div class="Listing-body body">
+      <h3 class="heading-Listing">Listing Books</h3>
+      <% bookList.forEach(book=>{ %>
+
+      <div class="list-books">
+        <h3><%= book.title %></h3>
+        <p><%= book.desc.slice(0,200) %> ...</p>
+        <a href="/books/<%= book._id %>" class="btn addBook-btn">Show</a>
+        <hr />
+      </div>
+      <%})%>
+    </div>
+  </body>
+</html>

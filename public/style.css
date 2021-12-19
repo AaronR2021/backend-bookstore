@@ -1,0 +1,200 @@
+body {
+  background-color: rgb(214, 243, 233);
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+nav {
+  background-color: rgba(137, 43, 226, 0.103);
+}
+a {
+  text-decoration: none;
+} 
+.homeIndex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.addBook-btn {
+  background-color: rgb(13, 160, 13);
+  color: white;
+  font-weight: 700;
+}
+.storeBtn {
+  border: 2px solid black;
+  background-color: rgb(214, 243, 233);
+  color: rgb(88, 86, 86);
+}
+
+.edit-btn {
+  background-color: blueviolet;
+  color: white;
+}
+.delete-btn {
+  background-color: red;
+  color: white;
+}
+.centerAlign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav {
+  height: 50px;
+  box-shadow: 0 0 2px black;
+}
+.listingNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+  align-items: center;
+}
+.anchorNav {
+  color: rgb(94, 94, 221);
+  font-weight: 800;
+  font-size: 20px;
+}
+.Listing-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading-Listing {
+  color: rgb(88, 86, 86);
+  font-weight: 800;
+  font-size: 30px;
+}
+.list-books {
+  box-shadow: 2px 2px 3px black;
+  width: 98%;
+  margin: auto;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  background-color: rgba(137, 43, 226, 0.171);
+}
+.bookInfo-buttonGroup {
+  margin: 20px 0;
+}
+.body {
+  padding: 10px;
+}
+.title-heading {
+  color: green;
+  font-weight: 700;
+  font-size: 28px;
+}
+.authorName {
+  color: blueviolet;
+  font-weight: 600;
+  font-size: 22px;
+}
+.bookInfo {
+  color: rgb(66, 66, 66);
+  font-size: 25px;
+}
+.bookPrice {
+  color: rgb(66, 66, 66);
+  font-size: 23px;
+}
+.box-btn {
+  margin-right: 10px;
+  font-weight: 600;
+}
+.outer-formOutline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.formOutline {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: honeydew;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.formTitle {
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  padding: 10px;
+}
+input,
+textarea {
+  margin: 5px 0;
+  height: 30px;
+  width: 100%;
+}
+textarea {
+  height: 100px;
+}
+.btn-submit {
+  background-color: rgb(35, 150, 221);
+  color: white;
+  font-weight: 800;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.comment{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end
+}
+.btn-postComment{
+color: white;
+font-weight: 700;
+background-color: green;
+width:150px;
+font-size: 15px;
+}
+.Comment-outline{
+  background-color: rgba(128, 128, 128, 0.384);
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.comment-btn-outline{
+  align-self: flex-end;
+}
+.UpdateBook-form{
+display: flex;
+height: 92vh;
+justify-content: center;
+align-items: center;
+}
+.comment-form-update{
+  border: 3px double blue;
+  min-width: 300px;
+  width: 40%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+textarea{
+  border: none;
+}
+.comment-text{
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}

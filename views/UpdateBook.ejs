@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Update Book</title>
+  </head>
+  <body>
+    <nav class="listingNav nav">
+      <span class="anchorNav">BookStore</span>
+      <a href="/books" class="btn addBook-btn">Back</a>
+    </nav>
+    <div class="outer-formOutline">
+      <div class="formOutline">
+        <!--add form-->
+        <!--ejs complete-->
+        <h4 class="formTitle">Add Book</h4>
+        <form action="/books/<%= bookInfo.id %>/update" method="post">
+          <input
+            type="text"
+            name="title"
+            placeholder="Add Title"
+            value="<%= bookInfo.title %>"
+          />
+          <textarea name="desc" placeholder="Add Description">
+            <%= bookInfo.desc %>
+            </textarea
+          >
+          <input
+            type="number"
+            name="price"
+            placeholder="Add price"
+            value="<%= bookInfo.price %>"
+          />
+          <input
+            type="text"
+            name="author"
+            placeholder="Add author"
+            value="<%= bookInfo.author %>"
+          />
+          <input type="submit" value="Add Book" class="btn btn-submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
